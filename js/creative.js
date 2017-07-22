@@ -1,6 +1,8 @@
 (function($) {
     "use strict"; // Start of use strict
 
+    var time1='420';
+
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $(document).on('click', 'a.page-scroll', function(event) {
         var $anchor = $(this);
@@ -59,7 +61,16 @@
         image: {
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
         },
-
+        iframe : {
+            patterns : {
+                youtube : {
+                    index: 'youtube.com',
+                    id: 'v=',
+                    // hijack the id to be able to autoplay videos at a specific timestamp
+                    src: '//www.youtube.com/embed/%id%&autoplay=1'
+                }
+            }
+        }
+        // todo: add iframe config
     });
-
 })(jQuery); // End of use strict
