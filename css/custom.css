@@ -1,0 +1,17 @@
+.wrapper {
+    position: relative;
+}
+
+.wrapper .fa {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.header-bolder {
+    font-weight: bolder;
+}
+
+.award-list {
+    font-style: italic;
+}
